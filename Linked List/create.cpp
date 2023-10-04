@@ -2,11 +2,11 @@
 using namespace std;
 
 class Node {
-
 public:
     int data;
     Node* next;
 };
+
 void Print(Node* n) {
     while(n!=NULL) {
         cout  << n->data << endl;
