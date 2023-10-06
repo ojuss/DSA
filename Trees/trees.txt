@@ -5,7 +5,7 @@ structure or a tree like arrangements of elements. Trees are composed of nodes, 
 
 3.  In a Binary Search Tree (BST): In a binary search tree, the values are organized in such a way that the left child of a node contains values less than the parent node, and the right child contains values greater than the parent node. This property makes it efficient for searching, insertion, and deletion operations. So, in a BST, the value of the right child is typically greater than its parent, and the value of the left child is typically smaller than its parent.
 
-4.  trees.txt :
+4.  create-tree.txt :
                     1                    Level 1
                   /   \                  
                 2       3                Level 2
@@ -14,3 +14,15 @@ structure or a tree like arrangements of elements. Trees are composed of nodes, 
                  /       /
                 9       15               Level 4
                     
+5.  Two main algorithms to traverse through a tree: 
+    - DFS (Depth First Search): prioritizes depth search over breadth.
+      (a) pre-order (data, left, right)
+      (b) in-order (left, data, right)
+      (c) post-order (left, right, data)
+
+
+    - BFS (Breadth First Search): prioritizes breadth search over depth.
+
+
+
+
