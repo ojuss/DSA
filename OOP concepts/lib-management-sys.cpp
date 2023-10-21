@@ -66,10 +66,10 @@ public:
    	  }	
     }
     
-    void searchBook(string bookName) {
+    void searchBook(string bookSearch) {
       
       for (int i = 0; i < books.size(); i++) {
-        if (books[i].title == bookName) {
+        if (books[i].title == bookSearch || books[i].isbn == bookSearch) {
           cout << "The following book has been found in the library:" << endl;
           books[i].display();
           return;
@@ -96,7 +96,10 @@ int main () {
     lib.addBook("Let Us C", "E balagurusamy", "124", "y");
     lib.addBook("Lord of the Rings", "JRR Tolkien", "125", "y");
     
-    
+    while (true) {
+
+        
+    }
     cout << "Enter choice : " << endl;
     cout << "1. Add\n2. Update\n3. Remove\n4. Search\n5. Display" << endl;
     cin >> choice;
@@ -104,14 +107,14 @@ int main () {
     
     switch (choice) {
         case 1:
-            cout << "Add a book: " << endl;
+            cout << "Add a book details..." << endl;
             cout << "Author name: " << endl;
             cin >> a;
             cout << "Title of the book: " << endl;
             cin >> t;
             cout << "ISBN: " << endl;
             cin >> i;
-            
+            cout << "Adding the book to library..." << endl;
             lib.addBook(t, a, i, "y");
         break;
         case 2:
@@ -128,7 +131,7 @@ int main () {
             lib.removeBook(i);
         break;
         case 4: 
-            cout << "Enter the Title of the book to search: " << endl;
+            cout << "Enter the Title or ISBN of the book to search: " << endl;
             cin >> t;
             cout << "Searching for the book..." << endl;
             lib.searchBook(t);
