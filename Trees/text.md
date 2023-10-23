@@ -23,3 +23,13 @@ Two main algorithms to traverse through a tree:
 
 - BFS (Breadth First Search): prioritizes breadth search over depth.
 
+## 6. Height and Depth of a binary tree
+
+![Alt text](image-1.png)
+Height of the node is the longest path from the node to a leaf node.
+ALSO! height of the tree = height of the node
+Height of the tree with 1 node = 0
+
+Depth of the node is the number of the edges from root to that node
+
+
