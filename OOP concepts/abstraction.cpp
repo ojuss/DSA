@@ -1,8 +1,7 @@
-#include  <iostream>
+#include <iostream>
 using namespace std;
 
-
-// Abstracted Class
+// Abstract Base Class
 class AbstractEmployee {
     virtual void askForPromotion() = 0;
 };
@@ -21,15 +20,13 @@ public:
         salary = Salary;
     }
 
-     void askForPromotion() {
-        if  (age > 30) { 
-            cout << name << " just got promoted!" << endl;
-        }
-
-        else {
+    void askForPromotion() {
+        if (age > 30) { 
+            cout << name << "Just got promoted!" << endl;
+        } else {
             cout << "Sorry no promotion for you!" << endl;
         }
-     }
+    }
 };
 
 int main() {
